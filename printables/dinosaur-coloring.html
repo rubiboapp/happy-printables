@@ -1,262 +1,340 @@
 <!doctype html>
 <html lang="en">
-
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>DinosaurRR Coloring Page — Free Printable | Happy Printables</title>
+  <title>Dinosaur Coloring Pages for Kids | Free Printables</title>
 
-<meta
-  name="description"
-  content="Free printable dinosaur coloring page for kids. Color a T-Rex, Triceratops, Stegosaurus and Brontosaurus. Print or download the worksheet for free."
->
+  <meta
+    name="description"
+    content="Free dinosaur coloring pages for kids. Choose a cute dinosaur coloring sheet, print it and start coloring!"
+  >
 
-<meta name="robots" content="index, follow">
+  <meta name="robots" content="index, follow">
 
-<link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="../style.css">
 
-<style>
+  <style>
+    .dino-page {
+      max-width: 1050px;
+      margin: 0 auto;
+      padding: 30px 20px 70px;
+    }
 
-.printable-page{
-  max-width:950px;
-  margin:0 auto;
-  padding:30px 20px 70px;
-}
+    .dino-hero {
+      text-align: center;
+      padding: 35px 20px 25px;
+    }
 
-.back-link{
-  display:inline-block;
-  margin-bottom:25px;
-  text-decoration:none;
-  font-weight:700;
-}
+    .dino-hero .eyebrow {
+      display: inline-block;
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #e85d75;
+      margin-bottom: 10px;
+    }
 
-.printable-heading{
-  text-align:center;
-  margin-bottom:30px;
-}
+    .dino-hero h1 {
+      margin: 0 0 12px;
+      font-size: clamp(34px, 6vw, 58px);
+      line-height: 1.05;
+    }
 
-.printable-heading .eyebrow{
-  display:inline-block;
-  font-size:12px;
-  font-weight:800;
-  letter-spacing:1.5px;
-  color:#d94f70;
-  margin-bottom:8px;
-}
+    .dino-hero p {
+      max-width: 650px;
+      margin: 0 auto;
+      font-size: 18px;
+      line-height: 1.6;
+      color: #555;
+    }
 
-.printable-heading h1{
-  margin:0 0 10px;
-  font-size:clamp(32px,5vw,52px);
-  line-height:1.05;
-}
+    .dino-intro {
+      margin: 25px auto 35px;
+      padding: 18px 22px;
+      max-width: 760px;
+      text-align: center;
+      background: #fff8e8;
+      border-radius: 18px;
+      font-size: 16px;
+      line-height: 1.6;
+    }
 
-.printable-heading p{
-  max-width:650px;
-  margin:0 auto;
-  color:#657083;
-  font-size:17px;
-  line-height:1.6;
-}
+    .dino-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      margin-top: 30px;
+    }
 
-.preview-card{
-  background:#fff;
-  border:1px solid #e1e5eb;
-  border-radius:22px;
-  padding:14px;
-  box-shadow:0 12px 35px rgba(30,40,70,.08);
-}
+    .dino-card {
+      background: white;
+      border: 1px solid #e8e8e8;
+      border-radius: 22px;
+      padding: 24px;
+      text-align: center;
+      box-shadow: 0 8px 25px rgba(0,0,0,.06);
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
 
-.preview-card iframe{
-  display:block;
-  width:100%;
-  height:850px;
-  border:0;
-  border-radius:14px;
-  background:#f7f7f7;
-}
+    .dino-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 14px 30px rgba(0,0,0,.09);
+    }
 
-.actions{
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  gap:12px;
-  flex-wrap:wrap;
-  margin-top:25px;
-}
+    .dino-icon {
+      width: 75px;
+      height: 75px;
+      margin: 0 auto 15px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 38px;
+      background: #eef8df;
+    }
 
-.actions a,
-.actions button{
-  display:inline-flex;
-  align-items:center;
-  justify-content:center;
-  gap:8px;
-  min-height:48px;
-  padding:0 22px;
-  border:0;
-  border-radius:12px;
-  background:#222b3a;
-  color:white;
-  text-decoration:none;
-  font:inherit;
-  font-weight:800;
-  cursor:pointer;
-}
+    .dino-card:nth-child(2) .dino-icon {
+      background: #e8f7ff;
+    }
 
-.actions a.secondary{
-  background:#f0f3f7;
-  color:#222b3a;
-}
+    .dino-card:nth-child(3) .dino-icon {
+      background: #fff0f4;
+    }
 
-.info{
-  max-width:700px;
-  margin:40px auto 0;
-  text-align:center;
-}
+    .dino-card h2 {
+      margin: 5px 0 8px;
+      font-size: 22px;
+    }
 
-.info h2{
-  margin-bottom:8px;
-}
+    .dino-card p {
+      margin: 0 0 18px;
+      color: #666;
+      line-height: 1.5;
+    }
 
-.info p{
-  color:#687386;
-  line-height:1.7;
-}
+    .print-button {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 12px;
+      background: #26324a;
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+      transition: opacity .2s ease;
+    }
 
-@media(max-width:700px){
+    .print-button:hover {
+      opacity: .85;
+    }
 
-  .printable-page{
-    padding:20px 12px 50px;
-  }
+    .how-section {
+      margin-top: 55px;
+      padding: 30px;
+      border-radius: 22px;
+      background: #f5f8ff;
+    }
 
-  .preview-card{
-    padding:7px;
-    border-radius:16px;
-  }
+    .how-section h2 {
+      text-align: center;
+      margin-top: 0;
+      font-size: 28px;
+    }
 
-  .preview-card iframe{
-    height:650px;
-  }
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      text-align: center;
+    }
 
-}
+    .step {
+      padding: 10px;
+    }
 
-@media print{
+    .step-number {
+      width: 42px;
+      height: 42px;
+      margin: 0 auto 10px;
+      border-radius: 50%;
+      background: #26324a;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+    }
 
-  .no-print{
-    display:none !important;
-  }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 15px;
+      text-decoration: none;
+      font-weight: 700;
+    }
 
-}
+    @media (max-width: 750px) {
+      .dino-grid {
+        grid-template-columns: 1fr;
+      }
 
-</style>
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      .dino-page {
+        padding-left: 15px;
+        padding-right: 15px;
+      }
+    }
+  </style>
 </head>
-
 
 <body>
 
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="../index.html">⭐ Happy Printables</a>
+      <a href="../index.html">Browse printables</a>
+    </div>
+  </header>
 
-<header class="site-header no-print">
+  <main class="dino-page">
 
-  <div class="container header-inner">
-
-    <a class="logo" href="../index.html">
-      Happy Printables
+    <a class="back-link" href="../index.html">
+      ← Browse all printables
     </a>
 
-    <a href="../index.html">
-      Browse printables
-    </a>
+    <section class="dino-hero">
 
-  </div>
+      <span class="eyebrow">FREE PRINTABLES</span>
 
-</header>
+      <h1>🦖 Dinosaur Coloring Pages</h1>
 
+      <p>
+        Fun and cute dinosaur coloring pages for kids.
+        Choose a page, print it and let the coloring begin!
+      </p>
 
-<main class="printable-page">
+    </section>
 
+    <div class="dino-intro">
+      🖍️ <strong>Choose your favorite dinosaur page below.</strong>
+      Each printable is free and ready to print at home.
+    </div>
 
-  <a class="back-link no-print" href="../index.html">
-    ← Browse all printables
-  </a>
+    <section class="dino-grid">
 
+      <!-- PDF 1 -->
 
-  <section class="printable-heading">
+      <article class="dino-card">
 
-    <span class="eyebrow">
-      FREE PRINTABLE
-    </span>
+        <div class="dino-icon">🦖</div>
 
-    <h1>
-      Dinosaur Coloring Page
-    </h1>
+        <h2>Cute Dinosaur Friends</h2>
 
-    <p>
-      A fun dinosaur coloring page for kids featuring a T-Rex,
-      Triceratops, Stegosaurus and Brontosaurus.
-    </p>
+        <p>
+          A fun coloring page with several friendly dinosaurs
+          ready for your crayons.
+        </p>
 
-  </section>
+        <a
+          class="print-button"
+          href="dinosaur_coloring_01.pdf"
+          target="_blank"
+        >
+          🖨️ Print this page
+        </a>
 
-
-  <section class="preview-card">
-
-    <iframe
-      src="dinosaur-coloring-page.pdf"
-      title="Dinosaur Coloring Page PDF"
-    >
-    </iframe>
-
-  </section>
+      </article>
 
 
-  <div class="actions no-print">
+      <!-- PDF 2 -->
 
-    <a
-      href="dinosaur-coloring-page.pdf"
-      target="_blank"
-      rel="noopener"
-    >
-      📄 Open PDF
-    </a>
+      <article class="dino-card">
 
-    <a
-      href="dinosaur-coloring-page.pdf"
-      download
-    >
-      ⬇️ Download PDF
-    </a>
+        <div class="dino-icon">🦕</div>
 
-    <button onclick="window.print()">
-      🖨 Print
-    </button>
+        <h2>Dinosaur Adventure</h2>
 
-    <a
-      class="secondary"
-      href="../index.html"
-    >
-      ← More printables
-    </a>
+        <p>
+          Meet more prehistoric friends in this fun dinosaur
+          coloring adventure.
+        </p>
 
-  </div>
+        <a
+          class="print-button"
+          href="dinosaur_coloring_02.pdf"
+          target="_blank"
+        >
+          🖨️ Print this page
+        </a>
+
+      </article>
 
 
-  <section class="info">
+      <!-- PDF 3 -->
 
-    <h2>
-      A fun dinosaur activity for kids
-    </h2>
+      <article class="dino-card">
 
-    <p>
-      Print this free dinosaur coloring page and let your child
-      color the prehistoric scene. The worksheet includes four
-      different dinosaurs and plenty of details to color.
-    </p>
+        <div class="dino-icon">🥚</div>
 
-  </section>
+        <h2>Prehistoric Pals</h2>
+
+        <p>
+          Another cute dinosaur coloring sheet with different
+          dinosaurs to color.
+        </p>
+
+        <a
+          class="print-button"
+          href="dinosaur_coloring_03.pdf"
+          target="_blank"
+        >
+          🖨️ Print this page
+        </a>
+
+      </article>
+
+    </section>
 
 
-</main>
+    <section class="how-section">
 
+      <h2>How it works</h2>
+
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-number">1</div>
+          <strong>Choose a page</strong>
+          <p>Pick your favorite dinosaur coloring sheet.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">2</div>
+          <strong>Open the printable</strong>
+          <p>Click the button to open the PDF.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">3</div>
+          <strong>Print & color</strong>
+          <p>Print it at home and start coloring!</p>
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      Happy Printables · Free coloring pages for kids
+    </div>
+  </footer>
 
 </body>
 </html>
