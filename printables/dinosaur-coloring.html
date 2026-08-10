@@ -1,15 +1,755 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Dinosaur Coloring Page — Happy Printables</title><meta name="description" content="Free printable friendly dinosaur coloring page for kids."><link rel="stylesheet" href="../style.css"></head><body>
-<header class="print-header no-print"><div class="wrap print-nav"><a class="brand" href="../index.html"><b>★</b> Happy <span>Printables</span></a><a href="../index.html">← Browse all</a></div></header>
-<main class="print-main"><div class="print-title no-print"><span class="eyebrow">FREE PRINTABLE</span><h1>Dinosaur Coloring Page</h1><p>A friendly dinosaur coloring page for little artists.</p></div>
-<div class="worksheet-shell"><div class="worksheet"><h2>Color the Dinosaur!</h2>
-<svg viewBox="0 0 800 520" width="100%" height="520" xmlns="http://www.w3.org/2000/svg">
-<path d="M110 400c-10-82 23-145 104-168 23-81 112-112 180-69 45-51 130-24 144 42 15 72-35 122-107 125h-60l-18 70h-49v-72h-83l-19 72h-48l8-78c-35 3-45 44-52 78z" fill="#fff" stroke="#17233a" stroke-width="9" stroke-linejoin="round"/>
-<path d="M410 170l-10-67 45 57M458 151l19-63 26 59M511 164l48-46-18 67" fill="none" stroke="#17233a" stroke-width="9" stroke-linejoin="round"/>
-<circle cx="575" cy="163" r="7" fill="#17233a"/>
-<path d="M270 220c16-18 34-18 50 0M320 205c15-17 33-17 48 0M370 224c16-18 34-18 50 0" fill="none" stroke="#17233a" stroke-width="8" stroke-linecap="round"/>
-<path d="M604 249c24 4 41 17 53 33M115 394c-29-22-52-22-72-5" fill="none" stroke="#17233a" stroke-width="8" stroke-linecap="round"/>
-<path d="M220 322c15 16 33 16 48 0M275 307c15 16 33 16 48 0" fill="none" stroke="#17233a" stroke-width="8"/>
-<text x="400" y="475" text-anchor="middle" font-size="27" font-family="Arial,sans-serif" font-weight="700" fill="#17233a">COLOR • HAVE FUN • BE CREATIVE!</text>
-</svg></div></div>
-<div class="controls no-print"><button class="btn" onclick="window.print()">🖨 Print coloring page</button> <a class="btn alt" href="../index.html">← More printables</a></div>
-</main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Dinosaur Coloring Page — Happy Printables</title>
+
+<meta
+  name="description"
+  content="Free printable dinosaur coloring page with several friendly dinosaurs for kids."
+>
+
+<link rel="stylesheet" href="../style.css">
+
+<style>
+
+.dino-sheet{
+  max-width:900px;
+  margin:auto;
+}
+
+.dino-worksheet{
+  background:#fff;
+  border:2px solid #202633;
+  border-radius:18px;
+  padding:28px 32px 32px;
+  box-shadow:0 12px 35px rgba(20,30,60,.08);
+}
+
+.dino-title{
+  text-align:center;
+  margin-bottom:18px;
+}
+
+.dino-title h2{
+  margin:0 0 5px;
+  font-size:30px;
+}
+
+.dino-title p{
+  margin:0;
+  color:#687386;
+  font-weight:600;
+}
+
+/* MAIN SCENE */
+
+.dino-scene{
+  width:100%;
+  display:block;
+  margin:auto;
+}
+
+.ink{
+  fill:#fff;
+  stroke:#202633;
+  stroke-width:5;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.detail{
+  fill:none;
+  stroke:#202633;
+  stroke-width:4;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+.eye{
+  fill:#202633;
+  stroke:none;
+}
+
+.small-detail{
+  fill:none;
+  stroke:#202633;
+  stroke-width:3.5;
+  stroke-linecap:round;
+}
+
+.caption{
+  text-align:center;
+  font-size:17px;
+  font-weight:800;
+  margin-top:5px;
+}
+
+/* LITTLE ACTIVITY */
+
+.bottom-box{
+  margin-top:18px;
+  border-top:2px dashed #d9dde4;
+  padding-top:18px;
+  text-align:center;
+}
+
+.bottom-box strong{
+  font-size:18px;
+}
+
+.dino-names{
+  display:flex;
+  justify-content:space-around;
+  gap:10px;
+  margin-top:12px;
+  font-size:14px;
+  font-weight:800;
+}
+
+.name-line{
+  border-bottom:2px solid #202633;
+  width:130px;
+  height:28px;
+}
+
+@media(max-width:650px){
+
+  .dino-worksheet{
+    padding:18px 12px 25px;
+  }
+
+  .dino-title h2{
+    font-size:25px;
+  }
+
+  .dino-names{
+    font-size:11px;
+  }
+
+  .name-line{
+    width:80px;
+  }
+
+}
+
+@media print{
+
+  body{
+    background:white !important;
+  }
+
+  .no-print{
+    display:none !important;
+  }
+
+  .dino-sheet{
+    max-width:none;
+  }
+
+  .dino-worksheet{
+    box-shadow:none;
+    border:2px solid #111;
+    border-radius:0;
+  }
+
+}
+
+</style>
+</head>
+
+
+<body>
+
+<header class="print-header no-print">
+
+  <div class="wrap print-nav">
+
+    <a class="brand" href="../index.html">
+      <b>★</b> Happy <span>Printables</span>
+    </a>
+
+    <a href="../index.html">
+      ← Browse all
+    </a>
+
+  </div>
+
+</header>
+
+
+<main class="print-main">
+
+
+  <div class="print-title no-print">
+
+    <span class="eyebrow">
+      FREE PRINTABLE
+    </span>
+
+    <h1>
+      Dinosaur Coloring Page
+    </h1>
+
+    <p>
+      A fun dinosaur coloring page with four friendly dinosaurs.
+    </p>
+
+  </div>
+
+
+  <div class="dino-sheet">
+
+    <div class="dino-worksheet">
+
+
+      <div class="dino-title">
+
+        <h2>
+          Dinosaur Day!
+        </h2>
+
+        <p>
+          Color all four dinosaurs and their prehistoric world.
+        </p>
+
+      </div>
+
+
+      <!-- DINOSAUR SCENE -->
+
+      <svg
+        class="dino-scene"
+        viewBox="0 0 820 650"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+
+
+        <!-- SUN -->
+
+        <circle
+          class="ink"
+          cx="735"
+          cy="65"
+          r="35"
+        />
+
+        <path
+          class="small-detail"
+          d="M735 13v-12
+             M735 117v12
+             M683 65h-12
+             M787 65h12
+             M698 28l-9-9
+             M772 102l9 9
+             M772 28l9-9
+             M698 102l-9 9"
+        />
+
+
+        <!-- CLOUD LEFT -->
+
+        <path
+          class="ink"
+          d="M55 90
+             C48 69 67 52 86 59
+             C92 36 128 34 139 58
+             C158 50 178 65 174 86
+             C174 91 171 95 166 98
+             H68
+             C60 98 55 95 55 90Z"
+        />
+
+
+        <!-- CLOUD RIGHT -->
+
+        <path
+          class="ink"
+          d="M590 145
+             C584 126 601 112 619 118
+             C628 94 660 96 669 119
+             C688 111 707 126 703 145
+             C703 150 699 153 694 155
+             H605
+             C596 155 591 152 590 145Z"
+        />
+
+
+        <!-- VOLCANO -->
+
+        <path
+          class="ink"
+          d="M45 520
+             L115 395
+             L150 455
+             L190 425
+             L255 520
+             Z"
+        />
+
+        <path
+          class="detail"
+          d="M103 419
+             Q116 431 129 419
+
+             M139 455
+             Q153 466 166 452
+
+             M181 477
+             Q196 487 209 474"
+        />
+
+
+        <!-- VOLCANO SMOKE -->
+
+        <path
+          class="detail"
+          d="M115 392
+             C94 369 111 350 131 355
+             C112 331 139 309 159 329
+             C171 304 204 316 199 342
+             C223 345 229 374 205 389"
+        />
+
+
+        <!-- T-REX -->
+
+        <path
+          class="ink"
+          d="M410 270
+
+             C389 232 399 188 432 169
+
+             C464 150 509 162 531 188
+
+             C552 212 552 249 532 273
+
+             L565 305
+
+             L612 292
+
+             L634 313
+
+             L586 336
+
+             L537 330
+
+             L516 375
+
+             L533 460
+
+             L505 460
+
+             L477 384
+
+             L430 387
+
+             L419 460
+
+             L390 460
+
+             L395 374
+
+             C366 362 347 341 346 313
+
+             C345 291 371 277 410 270
+             Z"
+        />
+
+
+        <!-- T REX JAW -->
+
+        <path
+          class="detail"
+          d="M466 246
+             C488 258 511 259 530 246
+
+             M468 246
+             L476 261
+             L484 246
+             L492 260
+             L500 245
+             L508 257
+             L516 242"
+        />
+
+        <!-- T REX EYE -->
+
+        <circle
+          class="eye"
+          cx="500"
+          cy="198"
+          r="5"
+        />
+
+        <!-- T REX ARMS -->
+
+        <path
+          class="detail"
+          d="M438 285
+             C422 300 418 315 430 327
+
+             M441 287
+             C453 302 454 313 447 323"
+        />
+
+
+        <!-- T REX BODY DETAILS -->
+
+        <path
+          class="small-detail"
+          d="M435 226
+             Q448 216 461 226
+
+             M451 345
+             Q465 356 479 345
+
+             M475 367
+             Q488 377 501 367"
+        />
+
+
+        <!-- TRICERATOPS -->
+
+        <path
+          class="ink"
+          d="M210 485
+
+             C190 455 192 420 214 397
+
+             C235 375 270 375 294 391
+
+             L328 408
+
+             C345 417 354 433 350 449
+
+             C346 464 330 474 309 474
+
+             L295 520
+
+             L268 520
+
+             L265 475
+
+             L226 475
+
+             L220 520
+
+             L193 520
+
+             L198 468
+
+             C183 459 178 441 187 428
+
+             C191 421 197 417 205 415
+             Z"
+        />
+
+
+        <!-- TRICERATOPS FRILL -->
+
+        <path
+          class="ink"
+          d="M207 416
+
+             C193 394 202 365 225 357
+
+             C245 350 261 363 266 381
+
+             C281 360 308 366 315 386
+
+             C320 402 311 418 296 426
+
+             Z"
+        />
+
+
+        <!-- TRICERATOPS HORNS -->
+
+        <path
+          class="ink"
+          d="M223 383
+             L210 350
+             L238 377
+             Z
+
+             M257 377
+             L267 340
+             L279 382
+             Z
+
+             M296 389
+             L322 362
+             L310 401
+             Z"
+        />
+
+
+        <!-- TRICERATOPS EYE -->
+
+        <circle
+          class="eye"
+          cx="291"
+          cy="416"
+          r="4.5"
+        />
+
+
+        <!-- TRICERATOPS MOUTH -->
+
+        <path
+          class="detail"
+          d="M302 443
+             Q321 450 335 440"
+        />
+
+
+        <!-- TRICERATOPS BODY DETAIL -->
+
+        <path
+          class="small-detail"
+          d="M232 437
+             Q245 426 257 437
+
+             M255 452
+             Q267 441 279 452"
+        />
+
+
+        <!-- STEGOSAURUS -->
+
+        <path
+          class="ink"
+          d="M505 510
+
+             C500 470 518 433 550 417
+
+             C583 400 625 408 651 429
+
+             C678 451 690 484 680 512
+
+             L696 520
+
+             L684 541
+
+             L648 525
+
+             L620 525
+
+             L613 565
+
+             L587 565
+
+             L584 524
+
+             L548 522
+
+             L539 565
+
+             L513 565
+
+             L519 516
+
+             Z"
+        />
+
+
+        <!-- STEGOSAURUS PLATES -->
+
+        <path
+          class="ink"
+          d="M531 426
+             L527 390
+             L552 413
+             L559 374
+             L577 407
+             L592 367
+             L604 408
+             L629 378
+             L631 416
+             L660 400
+             L652 432
+             Z"
+        />
+
+
+        <!-- STEGO EYE -->
+
+        <circle
+          class="eye"
+          cx="647"
+          cy="448"
+          r="4.5"
+        />
+
+
+        <!-- STEGO MOUTH -->
+
+        <path
+          class="detail"
+          d="M655 466
+             Q668 472 678 466"
+        />
+
+
+        <!-- STEGO BODY DETAILS -->
+
+        <path
+          class="small-detail"
+          d="M550 467
+             Q564 455 578 467
+
+             M575 480
+             Q589 468 603 480"
+        />
+
+
+        <!-- LITTLE PTERODACTYL -->
+
+        <path
+          class="ink"
+          d="M610 225
+
+             C635 200 665 194 690 207
+
+             C672 184 682 158 707 150
+
+             C695 176 711 197 735 207
+
+             C707 222 675 231 650 230
+             Z"
+        />
+
+        <circle
+          class="eye"
+          cx="701"
+          cy="199"
+          r="3"
+        />
+
+
+        <!-- TREES -->
+
+        <path
+          class="ink"
+          d="M90 555
+             L100 425
+             L116 425
+             L126 555
+             Z"
+        />
+
+        <circle class="ink" cx="108" cy="407" r="38"/>
+        <circle class="ink" cx="80" cy="430" r="28"/>
+        <circle class="ink" cx="137" cy="430" r="28"/>
+
+
+        <path
+          class="ink"
+          d="M720 555
+             L730 420
+             L746 420
+             L756 555
+             Z"
+        />
+
+        <circle class="ink" cx="738" cy="402" r="40"/>
+        <circle class="ink" cx="708" cy="428" r="27"/>
+        <circle class="ink" cx="765" cy="428" r="27"/>
+
+
+        <!-- GROUND -->
+
+        <path
+          class="detail"
+          d="M35 570
+             C120 548 175 582 250 568
+
+             C330 553 388 581 465 567
+
+             C540 553 612 583 790 562"
+        />
+
+        <!-- GRASS -->
+
+        <path
+          class="small-detail"
+          d="M72 580l-5-14
+             M82 580l7-16
+
+             M165 579l-4-15
+             M177 579l8-14
+
+             M350 578l-5-16
+             M360 578l8-14
+
+             M700 578l-4-16
+             M712 578l8-14"
+        />
+
+      </svg>
+
+
+      <div class="caption">
+        Color the dinosaurs, plants and volcano!
+      </div>
+
+
+      <div class="bottom-box">
+
+        <strong>
+          Can you name the dinosaurs?
+        </strong>
+
+        <div class="dino-names">
+
+          <div>
+            T-Rex
+            <div class="name-line"></div>
+          </div>
+
+          <div>
+            Triceratops
+            <div class="name-line"></div>
+          </div>
+
+          <div>
+            Stegosaurus
+            <div class="name-line"></div>
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+
+
+  <div class="controls no-print">
+
+    <button
+      class="btn"
+      onclick="window.print()"
+    >
+      🖨 Print coloring page
+    </button>
+
+    <a
+      class="btn alt"
+      href="../index.html"
+    >
+      ← More printables
+    </a>
+
+  </div>
+
+
+</main>
+
+</body>
+</html>
